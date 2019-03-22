@@ -1,0 +1,45 @@
+#include "stdafx.h"
+#include "conio.h"
+#include "math.h"
+#include <iostream>
+
+using namespace std;
+
+void main()
+{
+	float a,b,c,x1,x2,d;
+	cout<< "ingrese el valor de A: ";
+	cin>>a;
+	cout<< "ingrese el valor de B: ";
+	cin>>b;
+	cout<< "ingrese el valor de C: ";
+	cin>>c;
+	d=b*b-4*a*c;
+	if(a==0)
+	{
+		cout<<"No existe solucion."<<endl;
+	}
+	else 
+	{
+		if (d==0)
+		{
+			cout<<"Existe una unica solucion: "<<-b/(2*a)<<endl;
+		}
+		else
+		{
+			if (d<0)
+			{
+				cout<<"no existe solucion";
+			}
+			else 
+			{
+				cout<<"existen 2 soluciones."<<endl;
+				x1=(-b+sqrt(d))/(2*a);
+				x2=(-b-sqrt(d))/(2*a);
+				cout<<"X1: "<<x1<<endl;
+				cout<<"X2: "<<x2<<endl;
+			}
+		}
+	}
+	getch();
+}
