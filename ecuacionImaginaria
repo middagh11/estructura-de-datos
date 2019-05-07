@@ -1,0 +1,38 @@
+#include "stdafx.h"
+#include "math.h"
+#include <iostream>
+#include "conio.h"
+utilizando namespace std;
+ecuación del vacío (flotar a, flotar b, flotar c);
+vacío principal()
+{flotar a, b, c, x; char opc;
+    do {cout << "Ingrese a:" << endl;
+    cin >> a;
+    cout << "Ingrese b:" << endl;
+    cin >> b;
+    cout << "Ingrese c:" << endl;
+    cin >> c;
+    si (a == 0)
+    {x = -c / b; cout << "X:" << x << endl;}
+	else {ecuacion (a, b, c);}
+	cout << "Ingrese s para continuar" << endl;
+	cin >> opc; system ("cls");} while (opc == 's');
+}
+
+ecuación del vacío (flotar a, flotar b, flotar c)
+{float x1, x2, d, PR, PC;	
+    d = b * b-4 * a * c;
+	si (d> 0)
+	  {x1 = (- b + sqrt (d)) / (2 * a); 
+	   x2 = (- b-sqrt (d)) / (2 * a);
+	   cout << "X1:" << x1 << endl;
+	   cout << "X2:" << x2 << endl;
+	  }
+	 else {if (d <0)
+	  {PR = -b / (2 * a);
+	   PC = sqrt (-d) / (2 * a);
+	   cout << PR << "+" << PC << "i" << endl;
+	   cout << PR << "-" << PC << "i" << endl;
+	  } else {cout << "x =" << - b / (2 * a) << endl;}
+	
+	 }}
