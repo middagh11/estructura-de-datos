@@ -1,0 +1,52 @@
+//persona.h
+#pragma una vez
+persona de clase
+{
+privado:
+	int CI;
+	int edad;
+público:
+	persona (int _CI, int _edad);
+	lectura de vacíos ();
+	void correr ();
+	~ persona (vacío);
+};
+
+//persona.cpp
+#include "StdAfx.h"
+#incluir "persona.h"
+#include "iostream"
+utilizando namespace std;
+
+persona :: persona (int _CI, int _edad)
+{CI = _CI; edad = _edad;
+}
+
+
+persona :: ~ persona (vacío)
+{
+}
+
+void persona :: correr ()
+{cout << "Tengo" << edad << "anios y estoy corriendo" << endl;
+}
+
+persona vacía :: leer ()
+{cout << "Soy" << CI << "y estoy leyendo" << endl;
+}
+
+//personaaaa.cpp (main)
+#include "stdafx.h"
+#include "conio.h"
+#include "iostream"
+#incluir "persona.h"
+#include "stdlib.h"
+utilizando namespace std;
+
+vacío principal()
+{
+	persona p1 (3458556,50);
+	p1.correr ();
+	p1.leer ();
+	getch ();
+}
