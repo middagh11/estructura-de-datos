@@ -1,0 +1,67 @@
+//matriz.h
+#pragma una vez
+# define MAX 100
+clase matriz
+{
+privado:
+	int n, m;
+	int M [MAX] [MAX];
+público:
+	matriz (vacío);
+	~ matriz (vacío);
+	void cargarmat (int n, int m);
+	void mostrarmat (int n, int m);
+};
+
+//matriz.cpp
+#include "StdAfx.h"
+#include "matriz.h"
+#include <iostream>
+utilizando namespace std;
+
+matriz :: matriz (vacío)
+{
+}
+
+
+matriz :: ~ matriz (vacío)
+{
+}
+
+matriz vacía :: cargarmat (int n, int m)
+{para (int a = 0; a <n; a ++)
+{para (int b = 0; b <m; b ++)
+{cout << "M [" << a << "] [" << b << "] =";
+cin >> M [a] [b];
+}
+}
+}
+
+matriz vacía :: mostrarmat (int n, int m)
+{para (int a = 0; a <n; a ++)
+{para (int b = 0; b <m; b ++)
+{cout << "M [" << a << "] [" << b << "] =" << M [a] [b] << "";
+} cout << endl;
+}
+}
+
+// ejemplomatrices.cpp
+
+#include "stdafx.h"
+#include "matriz.h"
+#include <iostream>
+#include "conio.h"
+utilizando namespace std;
+
+vacío principal()
+{int f, c;
+do {cout << "Ingrese el numero de filas:"; cin >> f;
+} while (f <1 || f> 100);
+do {cout << "Ingrese el numero de columnas:"; cin >> c;
+} while (c <1 || c> 100);
+matriz m1;
+m1.cargarmat (f, c);
+m1.mostrarmat (f, c);
+getch ();
+
+}
