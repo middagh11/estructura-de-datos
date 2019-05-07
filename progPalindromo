@@ -1,0 +1,56 @@
+//ejerciciopalindromo.h
+#pragma una vez
+#include "string.h"
+vector de clase
+{
+privado:
+	int n; char A [100];
+público:
+	Vector (vacío);
+	~ Vector (vacío);
+	bool capicua (char A [], int n);
+};
+
+//ejerciciopalindromo.cpp
+#include "StdAfx.h"
+#include "Vector.h"
+#include <iostream>
+utilizando namespace std;
+
+Vector :: Vector (vacío)
+{
+}
+
+
+Vector :: ~ Vector (vacío)
+{
+}
+
+bool Vector :: capicua (char A [], int n)
+{bool res = true;
+	para (int a = 0, b = n-1; a <(n / 2); a ++, b--)
+	{si (A [a]! = A [b]) {res = falso;}
+}
+ volver res;
+}
+
+// ejerciciopalindromomain
+
+#include "stdafx.h"
+#include <string>
+#include "Vector.h"
+#include "conio.h"
+#include <iostream>
+utilizando namespace std;
+
+vacío principal()
+{int N; bool res; char a [100];
+cout << "Ingrese la frase a validar" << endl;
+Vector V1;
+cin.getline (a, '\ n');
+N = strlen (a);
+res = V1.capicua (a, N);
+if (res == true) {cout << "La frase es capicua";}
+else {cout << "La frase no es capicua";}
+getch ();
+}
